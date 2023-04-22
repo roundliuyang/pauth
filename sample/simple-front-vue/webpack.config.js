@@ -85,7 +85,7 @@ module.exports = (options = {}) => ({
 
                     let options = {
                         method: 'POST',
-                        url: 'http://127.0.0.1/oauth2/token',
+                        url: 'http://127.0.0.1:8090/oauth2/token',
                         headers: {
                             'authorization': 'Basic ZGVtbzp6ZHMxZlQ=',
                             'content-type': 'application/x-www-form-urlencoded',
@@ -95,7 +95,7 @@ module.exports = (options = {}) => ({
                         form: {
                             "grant_type": "AUTHORIZATION_CODE",
                             "code": authCode,
-                            'redirect_uri': 'http://localhost:8888/#/login'
+                            'redirect_uri': 'http://localhost:8400/#/login'
                         }
                     };
 
@@ -130,7 +130,7 @@ module.exports = (options = {}) => ({
 
                     let options = {
                         method: 'POST',
-                        url: 'http://127.0.0.1/oauth2/token',
+                        url: 'http://127.0.0.1:8090/oauth2/token',
                         headers: {
                             'authorization': 'Basic ZGVtbzp6ZHMxZlQ=',
                             'content-type': 'application/x-www-form-urlencoded',
@@ -140,7 +140,7 @@ module.exports = (options = {}) => ({
                         form: {
                             'grant_type': 'REFRESH_TOKEN',
                             'refresh_token': refresh_token,
-                            'redirect_uri': 'http://localhost:8888/#/login'
+                            'redirect_uri': 'http://localhost:8400/#/login'
                         }
                     };
 

@@ -187,7 +187,7 @@ public class OAuth2AuthTokenServiceImpl implements AuthorizationServerTokenServi
         Identity identity = null;
 
         // 先从远程获取获取用户信息，若没有找到，则尝试从本地数据库获取
-        identity = atlasLdpProvider.load(identityName);
+//        identity = atlasLdpProvider.load(identityName);
         if (identity == null) {
             if (isClient && localIdpProvider.getClass() == LocalAuthenticationProvider.class) {
                 // client credential grant type

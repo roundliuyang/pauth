@@ -71,7 +71,7 @@
             },
             login(){
                 // 跳转到pauth进行单点登录，需提供client id/call back url/scope等等
-                let pauthUrl = "http://localhost/#/authorize?";
+                let pauthUrl = "http://localhost:8090/#/authorize?";
                 let redirectUrl = "http%3a%2f%2flocalhost%3a8400%2f%23%2flogin";
                 let query = "response_type=code&client_id=demo&redirect_uri=" + redirectUrl + "&scope=user_role&state=1";
                 window.location.href = pauthUrl + query;
